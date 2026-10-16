@@ -2,23 +2,54 @@
 
 Python + PyTorch による Connect Four AI
 
+## 概要
+
+6行7列の Connect Four をプレイする AI です。
+
 ## 実行方法
 
-pip install torch<br>
+```bash
+pip install torch
 pip install pygame
 
 python main.py
+```
 
-## 構成
+## ネットワーク構成
 
-models/<br>
-&nbsp; connect4net.py    ニューラルネットワーク<br>
-&nbsp; trainer.py        学習<br>
-&nbsp; trained_ai.py     AIプレイヤー
+```text
+42 (盤面)
+ ↓
+128
+ ↓
+128
+ ↓
+64
+ ↓
+7 (列選択)
+```
 
-ui/<br>
-&ensp; start_screen.py<br>
-&ensp; game_screen.py
+## プロジェクト構成
 
-saved/<br>
-&emsp; connect4_model.pth
+```text
+models/
+├─ connect4net.py
+├─ trainer.py
+├─ trained_ai.py
+├─ board.py
+└─ settings.py
+
+ui/
+├─ start_screen.py
+└─ game_screen.py
+
+saved/
+└─ connect4_model.pth
+```
+
+## 技術
+
+- Python 3.11
+- PyTorch
+- Pygame
+- Reinforcement Learning
