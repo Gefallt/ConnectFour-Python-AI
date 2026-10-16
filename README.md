@@ -2,14 +2,24 @@
 
 Python + PyTorch による Connect Four AI
 
-## 機能
+## 実行方法
 
-- 人間対AI
-- ニューラルネットワーク
-- 学習済みモデル保存
-- GUI
+pip install torch
+pip install pygame
 
-## 技術
+python main.py
 
-- Python 3.11
-- PyTorch
+## 構成
+
+models/
+  connect4net.py    ニューラルネットワーク
+  trainer.py        学習
+  trained_ai.py     AIプレイヤー
+
+ui/
+  start_screen.py
+  game_screen.py
+
+saved/
+  connect4_model.pth
+``
